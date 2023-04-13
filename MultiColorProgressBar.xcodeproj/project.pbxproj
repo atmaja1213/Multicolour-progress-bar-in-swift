@@ -19,6 +19,9 @@
 		2F5C5C6F29E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */; };
 		2F5C5C7029E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */; };
 		2F5C5C7129E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */; };
+		2F5C5C7329E8398600DA13A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2F5C5C7229E8398600DA13A7 /* README.md */; };
+		2F5C5C7429E8398600DA13A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2F5C5C7229E8398600DA13A7 /* README.md */; };
+		2F5C5C7529E8398600DA13A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2F5C5C7229E8398600DA13A7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,7 @@
 		2F5C5C4F29E6A9E600DA13A7 /* MultiColorProgressBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiColorProgressBarUITests.swift; sourceTree = "<group>"; };
 		2F5C5C5129E6A9E600DA13A7 /* MultiColorProgressBarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiColorProgressBarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiColorProgressView.swift; sourceTree = "<group>"; };
+		2F5C5C7229E8398600DA13A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		2F5C5C2229E6A9E600DA13A7 = {
 			isa = PBXGroup;
 			children = (
+				2F5C5C7229E8398600DA13A7 /* README.md */,
 				2F5C5C2D29E6A9E600DA13A7 /* MultiColorProgressBar */,
 				2F5C5C4429E6A9E600DA13A7 /* MultiColorProgressBarTests */,
 				2F5C5C4E29E6A9E600DA13A7 /* MultiColorProgressBarUITests */,
@@ -238,6 +243,7 @@
 			files = (
 				2F5C5C3B29E6A9E600DA13A7 /* LaunchScreen.storyboard in Resources */,
 				2F5C5C3829E6A9E600DA13A7 /* Assets.xcassets in Resources */,
+				2F5C5C7329E8398600DA13A7 /* README.md in Resources */,
 				2F5C5C3629E6A9E600DA13A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5C5C7429E8398600DA13A7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5C5C7529E8398600DA13A7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

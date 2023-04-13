@@ -46,8 +46,8 @@ class ViewController: UIViewController {
     @IBAction func changeColor(_ sender: Any) {
         self.colorChangeTime = getCurrentTime()
         var colourChangeSegment = Int(self.colorChangeTime - self.progressBarStartTime)
-        // We are changing the color for 2 secs at a strech.
-        var totalColorChangeSegment = colourChangeSegment + 2
+        // We are changing the color for 10 secs at a strech.
+        let totalColorChangeSegment = colourChangeSegment + 10
         while colourChangeSegment < totalColorChangeSegment {
             self.graphColors[Int(colourChangeSegment)] = UIColor.orange
             colourChangeSegment = colourChangeSegment + 1
