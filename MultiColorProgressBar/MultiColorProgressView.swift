@@ -6,7 +6,7 @@
 //
 
 import UIKit
-public struct DaiProgressBarConstants {
+public struct MultiColoredProgressBarConstants {
     
     struct Style {
         static let basePostion: Float = 0.0
@@ -15,7 +15,7 @@ public struct DaiProgressBarConstants {
         static let visualizerHeight: CGFloat = 50.0
     }
 }
-class DaiContentProgressView: UIView {
+class MultiColorProgressView: UIView {
 
     private var progressArray: [UIProgressView] = [UIProgressView]()
         private var graphColors: [UIColor]?
@@ -46,9 +46,9 @@ class DaiContentProgressView: UIView {
                   let colors = self.graphColors else { return }
 
             for index in 0 ..< count {
-                var xPosition: Float = DaiProgressBarConstants.Style.basePostion
+                var xPosition: Float = MultiColoredProgressBarConstants.Style.basePostion
                 if index == 0 {
-                    xPosition = DaiProgressBarConstants.Style.basePostion
+                    xPosition = MultiColoredProgressBarConstants.Style.basePostion
                 } else {
                     xPosition = xPosition + self.width
                 }
@@ -56,10 +56,10 @@ class DaiContentProgressView: UIView {
 
                 let progressSegment = UIProgressView(frame: CGRect(
                     x: CGFloat(xPosition),
-                    y: CGFloat(DaiProgressBarConstants.Style.basePostion),
+                    y: CGFloat(MultiColoredProgressBarConstants.Style.basePostion),
                     width: frame.size.width / CGFloat(count),
                     height: frame.size.height))
-                progressSegment.transform = CGAffineTransform(scaleX: 1.0, y: DaiProgressBarConstants.Style.barVisibleHeight)
+                progressSegment.transform = CGAffineTransform(scaleX: 1.0, y: MultiColoredProgressBarConstants.Style.barVisibleHeight)
                 progressSegment.tintColor = colors[index]
                 progressSegment.progressViewStyle = .bar
                 progressArray.append(progressSegment)
@@ -92,7 +92,7 @@ class DaiContentProgressView: UIView {
                 if nowProgressValue > 0 {
                     progress.setProgress(nowProgressValue, animated: true)
                 } else {
-                    progress.setProgress(DaiProgressBarConstants.Style.basePostion, animated: true)
+                    progress.setProgress(MultiColoredProgressBarConstants.Style.basePostion, animated: true)
                 }
             }
         }
@@ -100,7 +100,7 @@ class DaiContentProgressView: UIView {
         func setProgressAnimation(_ value: Float) {
             timeSecondAddValue = 0.01 * 1
             targetedValue = value
-            progressValue = DaiProgressBarConstants.Style.basePostion
+            progressValue = MultiColoredProgressBarConstants.Style.basePostion
             for i in 0 ..< progressArray.count {
                 let progress = progressArray[i]
                 progressValue += progress.progress
@@ -109,7 +109,7 @@ class DaiContentProgressView: UIView {
 
             if timer == nil {
                 if progressValue < targetedValue {
-                    timer = Timer.scheduledTimer(timeInterval: DaiProgressBarConstants.Style.barProgressTime, target: self, selector: #selector(self.showProgress), userInfo: nil, repeats: true)
+                    timer = Timer.scheduledTimer(timeInterval: MultiColoredProgressBarConstants.Style.barProgressTime, target: self, selector: #selector(self.showProgress), userInfo: nil, repeats: true)
                 }
             }
         }

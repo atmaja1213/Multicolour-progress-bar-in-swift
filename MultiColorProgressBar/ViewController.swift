@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var graphColors: [UIColor] = [UIColor]()
-    var progress:DaiContentProgressView?
+    var progress: MultiColorProgressView?
     var progressBarStartTime:Float = 0.0
     var colorChangeTime:Float = 0.0
     var pauseTimeStart:Float = 0.0
@@ -29,9 +29,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         self.progressBarStartTime = getCurrentTime()
         for _ in 0 ..< 180 {
-            self.graphColors.append(UIColor.black)
+            self.graphColors.append(UIColor.systemBlue)
         }
-        self.progress = DaiContentProgressView(frame: CGRect(x: 10, y: 200, width: 320, height: 20), progressCount: 180, colors: self.graphColors)
+        self.progress = MultiColorProgressView(frame: CGRect(x: 10, y: 200, width: 320, height: 20), progressCount: 180, colors: self.graphColors)
         
         view.addSubview(self.progress!)
         for segment in 0 ..< 180 {
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         // We are changing the color for 2 secs at a strech.
         var totalColorChangeSegment = colourChangeSegment + 2
         while colourChangeSegment < totalColorChangeSegment {
-            self.graphColors[Int(colourChangeSegment)] = UIColor.red
+            self.graphColors[Int(colourChangeSegment)] = UIColor.orange
             colourChangeSegment = colourChangeSegment + 1
         }
         

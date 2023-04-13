@@ -16,9 +16,9 @@
 		2F5C5C4629E6A9E600DA13A7 /* MultiColorProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C4529E6A9E600DA13A7 /* MultiColorProgressBarTests.swift */; };
 		2F5C5C5029E6A9E600DA13A7 /* MultiColorProgressBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C4F29E6A9E600DA13A7 /* MultiColorProgressBarUITests.swift */; };
 		2F5C5C5229E6A9E600DA13A7 /* MultiColorProgressBarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C5129E6A9E600DA13A7 /* MultiColorProgressBarUITestsLaunchTests.swift */; };
-		2F5C5C6729E6E18300DA13A7 /* DaiContentProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6629E6E18300DA13A7 /* DaiContentProgressView.swift */; };
-		2F5C5C6829E6E18300DA13A7 /* DaiContentProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6629E6E18300DA13A7 /* DaiContentProgressView.swift */; };
-		2F5C5C6929E6E18300DA13A7 /* DaiContentProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6629E6E18300DA13A7 /* DaiContentProgressView.swift */; };
+		2F5C5C6F29E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */; };
+		2F5C5C7029E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */; };
+		2F5C5C7129E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		2F5C5C4B29E6A9E600DA13A7 /* MultiColorProgressBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiColorProgressBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5C5C4F29E6A9E600DA13A7 /* MultiColorProgressBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiColorProgressBarUITests.swift; sourceTree = "<group>"; };
 		2F5C5C5129E6A9E600DA13A7 /* MultiColorProgressBarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiColorProgressBarUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2F5C5C6629E6E18300DA13A7 /* DaiContentProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaiContentProgressView.swift; sourceTree = "<group>"; };
+		2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiColorProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				2F5C5C2E29E6A9E600DA13A7 /* AppDelegate.swift */,
-				2F5C5C6629E6E18300DA13A7 /* DaiContentProgressView.swift */,
 				2F5C5C3029E6A9E600DA13A7 /* SceneDelegate.swift */,
+				2F5C5C6E29E8379D00DA13A7 /* MultiColorProgressView.swift */,
 				2F5C5C3229E6A9E600DA13A7 /* ViewController.swift */,
 				2F5C5C3429E6A9E600DA13A7 /* Main.storyboard */,
 				2F5C5C3729E6A9E600DA13A7 /* Assets.xcassets */,
@@ -263,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F5C5C6729E6E18300DA13A7 /* DaiContentProgressView.swift in Sources */,
 				2F5C5C3329E6A9E600DA13A7 /* ViewController.swift in Sources */,
+				2F5C5C6F29E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */,
 				2F5C5C2F29E6A9E600DA13A7 /* AppDelegate.swift in Sources */,
 				2F5C5C3129E6A9E600DA13A7 /* SceneDelegate.swift in Sources */,
 			);
@@ -274,8 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F5C5C6829E6E18300DA13A7 /* DaiContentProgressView.swift in Sources */,
 				2F5C5C4629E6A9E600DA13A7 /* MultiColorProgressBarTests.swift in Sources */,
+				2F5C5C7029E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5C5C7129E8379D00DA13A7 /* MultiColorProgressView.swift in Sources */,
 				2F5C5C5029E6A9E600DA13A7 /* MultiColorProgressBarUITests.swift in Sources */,
 				2F5C5C5229E6A9E600DA13A7 /* MultiColorProgressBarUITestsLaunchTests.swift in Sources */,
-				2F5C5C6929E6E18300DA13A7 /* DaiContentProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
